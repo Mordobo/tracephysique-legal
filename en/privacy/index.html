@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · TracePhysique</title>
+<meta name="description" content="How TracePhysique handles your data: in this version everything is stored only on your phone.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#131619" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F5F5F2" media="(prefers-color-scheme: light)">
+<link rel="alternate" hreflang="es" href="../../es/privacidad/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131619'/%3E%3Cpath d='M10 40 H21 L27 27 L33 45 L39 18 L45 40 H53' fill='none' stroke='%232BD4C9' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='53' cy='40' r='3.2' fill='%232BD4C9'/%3E%3C/svg%3E">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #131619;
+  --surface: #1b2024;
+  --text: #EEF1F4;
+  --muted: #a6adb5;
+  --divider: rgba(238,241,244,0.12);
+  --accent: #2BD4C9;
+  --accent-soft: #0e3230;
+  --ph-bg: #eed9b0;
+  --ph-text: #131619;
+  --ph-ring: #d8a44a;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #F5F5F2;
+    --surface: #fdfdfa;
+    --text: #1d2329;
+    --muted: #535b64;
+    --divider: rgba(29,35,41,0.14);
+    --accent: #0B7A73;
+    --accent-soft: #cdeee8;
+    --ph-bg: #ffe08a;
+    --ph-text: #3d2a00;
+    --ph-ring: #b07f1c;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
+.skip:focus { left: 16px; }
+header.top { border-bottom: 1px solid var(--divider); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 500; font-size: 17px; }
+.brand .mark { color: var(--accent); flex: none; }
+.brand b { color: var(--accent); font-weight: 500; }
+.lang { font-size: 14px; font-weight: 500; padding: 8px 12px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; white-space: nowrap; }
+main { padding: 28px 0 48px; }
+h1 { font-size: 28px; line-height: 1.2; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 12px; }
+h2 { font-size: 20px; line-height: 1.3; font-weight: 600; margin: 40px 0 10px; scroll-margin-top: 16px; }
+h3 { font-size: 17px; line-height: 1.35; font-weight: 600; margin: 26px 0 8px; scroll-margin-top: 16px; }
+p, ul, ol { margin: 0 0 14px; }
+ul, ol { padding-left: 22px; }
+li { margin: 0 0 6px; }
+li::marker { color: var(--accent); }
+strong { font-weight: 600; }
+.meta { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+.meta strong { color: var(--text); }
+.notice {
+  margin: 18px 0 0; padding: 12px 14px; border-radius: 12px; font-size: 14px;
+  background: var(--surface); border: 1px dashed var(--ph-ring);
+}
+nav.toc { margin: 22px 0 0; padding: 14px 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--divider); }
+nav.toc summary { cursor: pointer; font-weight: 600; }
+nav.toc ol { margin: 10px 0 0; padding-left: 20px; font-size: 15px; }
+nav.toc li { margin: 4px 0; }
+section.summary { margin-top: 26px; padding: 4px 18px 6px; border-radius: 16px; background: var(--accent-soft); }
+section.summary h2 { margin-top: 16px; }
+section.summary a { color: var(--text); }
+section.future { margin: 22px 0 0; padding: 2px 16px 4px; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 12px 12px 0; }
+section.future h3 { margin-top: 14px; }
+table { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: 15px; background: var(--surface); border-radius: 12px; overflow: hidden; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--divider); }
+tr:first-child th, tr:first-child td { border-top: 0; }
+th { width: 30%; font-weight: 600; color: var(--muted); }
+@media (max-width: 560px) {
+  table, tbody, tr, th, td { display: block; width: 100%; }
+  th { padding-bottom: 0; }
+  td { border-top: 0; padding-top: 4px; }
+}
+mark.ph {
+  background: var(--ph-bg); color: var(--ph-text); padding: 1px 6px; border-radius: 6px;
+  outline: 2px dashed var(--ph-ring); outline-offset: 1px; font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em;
+}
+footer { border-top: 1px solid var(--divider); color: var(--muted); font-size: 14px; }
+footer .wrap { padding-top: 20px; padding-bottom: 32px; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="../../" aria-label="TracePhysique, home"><svg class="mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false"><rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 40 H21 L27 27 L33 45 L39 18 L45 40 H53" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="53" cy="40" r="3.2" fill="currentColor"/></svg><span><b>Trace</b>Physique</span></a>
+<a class="lang" href="../../es/privacidad/" hreflang="es" lang="es">Español</a>
+</div></header>
+<main id="content"><div class="wrap">
+<h1>TracePhysique Privacy Policy</h1>
+<p class="meta"><strong>Version 1 · Effective October 8, 2026</strong></p>
+<p class="meta">Changelog: v1 — first version (the app stores data on the device only).</p>
+
+<nav class="toc" aria-label="Contents"><details><summary>Contents</summary><ol><li><a href="#1-who-is-responsible">1. Who is responsible</a></li><li><a href="#2-what-data-the-app-uses-and-where-it-is-stored">2. What data the app uses and where it is stored</a></li><li><a href="#3-what-your-data-is-used-for">3. What your data is used for</a></li><li><a href="#4-legal-basis">4. Legal basis</a></li><li><a href="#5-who-your-data-is-shared-with">5. Who your data is shared with</a></li><li><a href="#6-international-transfers">6. International transfers</a></li><li><a href="#7-how-long-it-is-kept">7. How long it is kept</a></li><li><a href="#8-your-rights">8. Your rights</a></li><li><a href="#9-minors">9. Minors</a></li><li><a href="#10-security">10. Security</a></li><li><a href="#11-how-to-exercise-your-rights">11. How to exercise your rights</a></li><li><a href="#12-changes-to-this-policy">12. Changes to this policy</a></li><li><a href="#13-medical-disclaimer">13. Medical disclaimer</a></li></ol></details></nav>
+<section class="summary" aria-labelledby="summary">
+<h2 id="summary">Summary</h2>
+<ul>
+<li>In this version, TracePhysique works only on your phone: there is no account and no server, and the app sends us none of your data.</li>
+<li>Your health data is only stored if you give your explicit consent, and you can withdraw it at any time.</li>
+<li>The app uses your age, your health answers and what you log while training to suggest exercises and loads.</li>
+<li>If your phone's backup is turned on, Google or Apple may keep a copy of the app's data in your account.</li>
+<li>Once you finish the initial questionnaire, you can export or delete all your data from Profile. If you have not finished it, see section 8.</li>
+<li>Outside the app, we only receive what you write to us, your public reviews on Google Play and technical data from Google Play and this website (section 2.6).</li>
+<li>No ads, no analytics and no trackers.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="1-who-is-responsible">
+<h2 id="1-who-is-responsible">1. Who is responsible</h2>
+<p>TracePhysique is an app by <strong>MORDOBO TECHNOLOGIES LLC</strong> ("Mordobo", "we", "us").</p>
+<ul>
+<li>Legal form: limited liability company (LLC) organized in Florida, United States</li>
+<li>Address: 2 S Biscayne Blvd, Ste 3200 #7229, Miami, FL 33131, United States</li>
+<li>Privacy contact: <a href="mailto:angelo.rivas@mordobo.com">angelo.rivas@mordobo.com</a>. At that address, Mordobo's Privacy team handles your requests, queries and complaints.</li>
+</ul>
+<p>Mordobo designs and publishes the app, and is the controller of the processing the app carries out on your phone, even though we never receive that data: in this version the app does not send it to us, so we do not see or store it. What we do receive outside the app is described in section 2.6.</p>
+</section>
+<section class="part" aria-labelledby="2-what-data-the-app-uses-and-where-it-is-stored">
+<h2 id="2-what-data-the-app-uses-and-where-it-is-stored">2. What data the app uses and where it is stored</h2>
+<p>The app stores your data in its own storage on your phone. We have set the app up so that this data, including health data, is included in the system backup and you do not lose it when you change phones: if your backup is turned on (Google's on Android; on iPhone, iCloud or your computer), it includes that data. The app does not store it anywhere else.</p>
+<h3 id="2-1-profile-and-preferences">2.1 Profile and preferences</h3>
+<table>
+<tbody>
+<tr><th scope="row">What it includes</th><td>Your name (optional), your date of birth, your sex (you can answer "Prefer not to say") and your body weight. Your answers to the initial questionnaire: goal, disciplines, level, days per week, minutes per session and where you train. Your language and coaching style.</td></tr>
+<tr><th scope="row">What for</th><td>To build and adjust your program, suggest your starting load and apply the age rules.</td></tr>
+<tr><th scope="row">Is it required?</th><td>Your date of birth is, because it decides whether you can use the app and whether you train in youth mode. Your name, sex and weight are not. Without your weight, your first session comes with no suggested load; without your sex (or with "Prefer not to say"), the suggested load uses the more conservative estimate. Several questionnaire questions can be skipped.</td></tr>
+<tr><th scope="row">Where</th><td>On your phone and in its backup, if turned on.</td></tr>
+</tbody></table>
+<h3 id="2-2-training">2.2 Training</h3>
+<table>
+<tbody>
+<tr><th scope="row">What it includes</th><td>Your program and today's session. For each session you log: date, exercises, sets, reps, load, time, RPE (rate of perceived exertion) and whether your technique was clean; how each exercise felt, session effort, duration and volume; and the exercises you swapped, with the reason. Your personal records and calisthenics skills, which the app calculates from your history. If you join today's WOD leaderboard, that entry. In this version the leaderboard exists only on your phone and shows only you: nothing is sent to other users.</td></tr>
+<tr><th scope="row">What for</th><td>To show you what to train, log your progress and adjust your next loads.</td></tr>
+<tr><th scope="row">Is it required?</th><td>It is created as you train; you decide what you log.</td></tr>
+<tr><th scope="row">Where</th><td>On your phone and in its backup, if turned on.</td></tr>
+</tbody></table>
+<h3 id="2-3-health-data-sensitive-or-special-category-data">2.3 Health data (sensitive or special category data)</h3>
+<table>
+<tbody>
+<tr><th scope="row">What it includes</th><td>Your answers to the 7-question health readiness check; whether you have had recent surgery; your injured areas (knee, low back, shoulder, wrist, elbow, hip, neck or ankle) and their state (mild, in treatment or recovered); whether a professional has cleared you to train, when you mark it in Profile; your confirmation that you will continue conservatively when an answer is "yes"; the pain reports you give with the "Pain" button during a session (areas, intensity, type of pain and what you chose to do), and the exercises you swap because of discomfort.</td></tr>
+<tr><th scope="row">What for</th><td>Only to decide which exercises and loads are safe for you: capping intensity, removing exercises that load an area in treatment and bringing them back at a reduced load once it recovers.</td></tr>
+<tr><th scope="row">Is it required?</th><td>It is your choice: it is only stored with your explicit consent, which you give by ticking a separate box. If you do not give it, the app cannot ask you these questions or build your program. The first time you use the app, this means you cannot finish the initial questionnaire or train with the app. If you already have a profile, you keep using the app without a program and can give it later.</td></tr>
+<tr><th scope="row">Where</th><td>On your phone and in its backup, if turned on.</td></tr>
+</tbody></table>
+<h3 id="2-4-consent-records">2.4 Consent records</h3>
+<table>
+<tbody>
+<tr><th scope="row">What it includes</th><td>Each time you give or withdraw a consent: which consent, whether you gave or withdrew it, the date and time, the version and language of the text, the full text you saw and the system (Android or iOS).</td></tr>
+<tr><th scope="row">What for</th><td>To apply your decision and let you show what you authorized and when.</td></tr>
+<tr><th scope="row">Is it required?</th><td>It is created only when you give or withdraw a consent.</td></tr>
+<tr><th scope="row">Where</th><td>On your phone and in its backup, if turned on. Withdrawing a consent adds a new record; deleting all your data deletes the records.</td></tr>
+</tbody></table>
+<h3 id="2-5-what-the-app-does-not-do">2.5 What the app does not do</h3>
+<ul>
+<li>It does not ask you to create an account or sign in.</li>
+<li>It does not connect to the internet on its own or send your data to any server. Exercises, illustrations and fonts are built into the app, and updates come through Google Play.</li>
+<li>It has no ads, analytics, crash reporting tools or third-party trackers.</li>
+<li>It does not ask for access to your location, camera, microphone, contacts or photos.</li>
+<li>It does not sell or share your data.</li>
+</ul>
+<p>In the app's permission list, Android shows that it can access the internet and view network connections. These come with the components the app is built with: this version does not use them to send your data.</p>
+<p>The app only opens web pages when you ask it to: if you tap Profile › Settings › About › "Illustrations", the RepDB website opens in your browser, and that site has its own privacy policy; if you open the privacy policy from the app (Profile › Settings › "Privacy policy", or the link on the first step of the initial questionnaire and in the health consent), this page opens in your browser.</p>
+<h3 id="2-6-if-you-write-to-us-post-a-review-or-visit-this-website">2.6 If you write to us, post a review or visit this website</h3>
+<p>Outside the app, we receive data about you in these cases:</p>
+<ul>
+<li><strong>If you write to us</strong> (for example, to exercise your rights or ask a question): your email address, your name if you give it, your country, what you tell us and anything you attach. We use it to answer you and to keep proof of how we handled your request. It is stored in our mailbox, hosted by Google (Google Workspace). Please do not send us health data: we do not need it to help you.</li>
+<li><strong>If you post a review on Google Play:</strong> we see the review and your Google profile name, like anyone else, and we can reply to it there. We use it to answer you and improve the app.</li>
+<li><strong>Google Play statistics:</strong> Google Play shows us aggregated install and uninstall statistics, and technical reports of app crashes and freezes (phone model, Android version and where the app failed) from people who have agreed in Android to share usage and diagnostics data. Those reports do not include your name or contact details. We use them to fix bugs.</li>
+<li><strong>If you visit this website:</strong> it uses no cookies, no analytics and no resources from other sites. It is hosted by GitHub, Inc. (GitHub Pages), which logs visitors' IP addresses for security purposes under its own privacy statement. We do not receive those logs.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="3-what-your-data-is-used-for">
+<h2 id="3-what-your-data-is-used-for">3. What your data is used for</h2>
+<ul>
+<li>Building and adapting your program: loads, rest and progression (necessary to provide the service).</li>
+<li>Keeping you safe with your health data: capping intensity, avoiding exercises that load an injured area and bringing them back at a lower load once it recovers (requires your explicit consent).</li>
+<li>Applying youth mode based on your age (necessary to provide the service).</li>
+<li>Showing you your history and progress (necessary to provide the service).</li>
+<li>Keeping proof of your consents and letting you export and delete your data (necessary to provide the service).</li>
+<li>Answering you if you write to us and fixing app crashes (section 2.6).</li>
+</ul>
+<p><strong>Profiling and automated decisions.</strong> To suggest exercises and loads, the app builds a profile of you: it automatically evaluates your age, your health answers and what you log while training. For example, it caps intensity if any answer to the health check is "yes", until a professional clears you; it removes exercises that load an area in treatment; and it adjusts the load based on the reps you do and your rate of perceived exertion (RPE). All of this happens on your phone. No suggestion has legal effects on you or similarly significantly affects you: you can always swap an exercise or skip it. The app only stops building a program in three cases: if you are under 16, if you have not given health consent or if too much of your profile is missing. Your data is not used for advertising or to build commercial profiles.</p>
+</section>
+<section class="part" aria-labelledby="4-legal-basis">
+<h2 id="4-legal-basis">4. Legal basis</h2>
+<p>Everything the app does happens on your phone. In the European Union it relies on:</p>
+<ul>
+<li><strong>Profile, preferences and training:</strong> it is necessary to provide the service you ask for by using the app (GDPR art. 6(1)(b)).</li>
+<li><strong>Health data:</strong> your explicit consent (GDPR art. 9(2)(a)). You can withdraw it at any time, and withdrawing it does not affect what was done before.</li>
+<li><strong>Consent records:</strong> they are part of the service, to apply your decision and let you prove it (GDPR art. 6(1)(b); they help meet art. 7(1)). Since they are only on your phone, if you need to prove your consent you can export them.</li>
+<li><strong>Emails you send us:</strong> if you exercise a data protection right, our legal obligation to handle it (GDPR art. 6(1)(c), with arts. 12 and 15 to 22); in other cases, and to reply to reviews, our legitimate interest in answering you (GDPR art. 6(1)(f)).</li>
+<li><strong>Crash reports and website logs:</strong> our legitimate interest in keeping the app and the website working and protected (GDPR art. 6(1)(f)).</li>
+</ul>
+<p>In other countries:</p>
+<ul>
+<li><strong>Mexico:</strong> profile and training data are processed because they are necessary to provide the service you ask for by using the app; health data is sensitive data and is only processed with your express consent.</li>
+<li><strong>Colombia:</strong> your authorization (Law 1581 of 2012, art. 9) and, for health data, your explicit authorization (art. 6).</li>
+<li><strong>Dominican Republic:</strong> profile and training data are processed because they are necessary to provide the service you ask for; health data, only with your express consent (Law 172-13, art. 76).</li>
+<li><strong>All other countries:</strong> the basis your law provides; health data, always with your explicit consent.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="5-who-your-data-is-shared-with">
+<h2 id="5-who-your-data-is-shared-with">5. Who your data is shared with</h2>
+<p>The app does not send us your data, and we do not sell or give anyone the data we receive outside it (section 2.6). Only these third parties are involved:</p>
+<ul>
+<li><strong>Google and Apple.</strong> Google Play distributes the app, under its own terms and privacy policy. The backup of the app's data (section 2) is made by Google on Android or Apple on iPhone, with your account, according to your settings and their own policies; we have no access to it. You can turn it off in your phone's settings.</li>
+<li><strong>Our email provider,</strong> Google (Google Workspace), stores the emails you send us on our behalf.</li>
+<li><strong>Our web hosting provider,</strong> GitHub, Inc. (GitHub Pages), serves this website and keeps its own technical logs under its privacy statement; we have no access to them.</li>
+<li><strong>What you share.</strong> When you export your data, you choose in your phone's share menu which app or service to send it to. From then on, that copy is under your control and under the policy of whoever receives it.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="6-international-transfers">
+<h2 id="6-international-transfers">6. International transfers</h2>
+<p>The app does not send your data off your phone. Google or Apple backups may be stored in other countries under their own policies. Mordobo is based in the United States: if you write to us, your email reaches us there and is stored on Google's servers, which may be in the United States or in other countries. This website is served by GitHub, Inc., also from the United States and other countries. For data coming from the European Economic Area, Google and GitHub state that they rely on the EU-U.S. Data Privacy Framework and on the European Commission's standard contractual clauses.</p>
+</section>
+<section class="part" aria-labelledby="7-how-long-it-is-kept">
+<h2 id="7-how-long-it-is-kept">7. How long it is kept</h2>
+<ul>
+<li><strong>On your phone:</strong> until you delete it from the app, clear the app's storage in Android settings or uninstall the app. Uninstalling the app deletes its data from the phone.</li>
+<li><strong>Health data:</strong> until you withdraw your consent or delete all your data.</li>
+<li><strong>Export files:</strong> the app leaves a temporary copy in its cache and deletes it the next time the app starts, when you withdraw health consent or when you delete your data.</li>
+<li><strong>Backups:</strong> these depend on Google's or Apple's settings and timelines. Deleting your data in the app does not instantly delete a backup that already exists; you can manage or delete it from your Google or Apple account settings. If you reinstall the app, the system may restore your data from that backup.</li>
+<li><strong>Emails you send us:</strong> as long as needed to handle your request, and then up to 3 years so we can show how we handled it if a claim is made.</li>
+<li><strong>This website's technical logs:</strong> set by GitHub under its privacy statement; we do not receive them.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="8-your-rights">
+<h2 id="8-your-rights">8. Your rights</h2>
+<p>Since the app does not send us your data, we cannot identify you or access it. That is why you exercise your rights over the app's data directly in the app; if you write to us, we will help you. Once you have finished the initial questionnaire:</p>
+<ul>
+<li><strong>Access and portability:</strong> Profile › "Export my data" creates a JSON file with all your data and a CSV file with your sets.</li>
+<li><strong>Rectification:</strong> correct your data in Profile and Settings, or retake the questionnaire with "Redo onboarding". Workouts you have already logged cannot be edited one by one: if one is wrong, write to us and we will explain your options, or delete all your data.</li>
+<li><strong>Erasure:</strong> Profile › "Delete account" deletes everything stored on the phone. There is no account in this version: the option deletes the data on the device.</li>
+<li><strong>Withdrawing health consent:</strong> Profile › Settings › Privacy and consents › "Withdraw consent". Your health answers (including your injured areas, a professional's clearance and your confirmation to continue conservatively), your pain reports, the exercise swaps you made because of discomfort and your program are deleted; the rest of your training history is kept. It does not affect what was done before you withdrew.</li>
+<li><strong>Restriction and objection:</strong> you can skip the optional questions, withdraw your consent, delete your data or stop using the app.</li>
+</ul>
+<p><strong>If you have not finished the initial questionnaire,</strong> or the app did not let you continue because of your age, you do not have a Profile yet to export or delete from. What you already answered (including your health answers and your consent record, if you gave it) stays on the phone. To delete it, uninstall the app or go to Android Settings › Apps › TracePhysique › Storage › Clear storage (names may vary by manufacturer). Remember the backup copy (section 7).</p>
+<p>You can also write to us (section 11). Since we do not receive the app's data, we cannot see or change it for you, but we will help you do it and answer your questions. For the emails you send us, you can exercise all your rights by writing to us.</p>
+<h3 id="spain-and-the-rest-of-the-european-economic-area">Spain and the rest of the European Economic Area</h3>
+<p>You have the right of access, rectification, erasure, restriction of processing, portability and objection, and to withdraw your consent at any time (GDPR and Spanish Organic Law 3/2018). We reply within one month at most, extendable by two more months for complex requests. If you are not satisfied, you can lodge a complaint with the Spanish Data Protection Agency (<a href="https://www.aepd.es">www.aepd.es</a>) or with the data protection authority of your country.</p>
+<h3 id="mexico">Mexico</h3>
+<p>Under the Federal Law on the Protection of Personal Data Held by Private Parties (published in the Official Gazette of the Federation on March 20, 2025), you have the ARCO rights —access, rectification, cancellation and objection— and you can revoke your consent at any time, without retroactive effect. Health data is sensitive data: it is only processed with your express consent, which you give by ticking a separate box, and it is recorded on your phone with the exact text you saw, the date and the version. We send you our answer within 20 business days at most and, if your request is granted, carry it out within the following 15 business days; both periods can be extended once by an equal period. The authority is the Secretaría Anticorrupción y Buen Gobierno (Ministry of Anti-Corruption and Good Governance): you can start a rights protection procedure before it within 15 business days of our answer or, if we do not answer, once the deadline has passed. This policy is our privacy notice (aviso de privacidad).</p>
+<h3 id="colombia">Colombia</h3>
+<p>Under Law 1581 of 2012 and its regulation (Decree 1377 of 2013, now compiled in Decree 1074 of 2015), you can know, update and correct your data; ask for proof of your authorization; be told how it has been used; revoke your authorization or ask for your data to be deleted; access it free of charge; and file complaints with the Superintendence of Industry and Commerce (SIC) after first making your query or claim to us. Health data is sensitive: you are not obliged to authorize its processing or to answer questions about it, although without it the app cannot build your program (section 2.3). We answer queries within 10 business days (extendable by 5) and claims within 15 business days (extendable by 8).</p>
+<h3 id="dominican-republic">Dominican Republic</h3>
+<p>Under Law 172-13 on personal data protection, you have the right of access, rectification, updating, cancellation (erasure) and objection, and each one is independent of the others. Health data is only processed with your express consent, which you give by ticking a separate box, and it is recorded. We answer access requests within 5 business days and rectification or erasure requests within 10 business days. If we do not answer in time, you can go to court through a habeas data action.</p>
+<h3 id="other-countries">Other countries</h3>
+<p>If you live in another country, you have the rights your local law gives you. You can exercise them right away with the in-app options described above or by writing to us (section 11). We reply within one month at most, or sooner if your law requires it, and you can lodge a complaint with your country's data protection authority.</p>
+</section>
+<section class="part" aria-labelledby="9-minors">
+<h2 id="9-minors">9. Minors</h2>
+<ul>
+<li>TracePhysique is only for people aged 16 or over. If you are under 16, do not use the app.</li>
+<li>The app asks for your date of birth at the end of the initial questionnaire, after the health questions. If it shows you are under 16, the app does not let you finish and does not build a program, but what you already answered (including your health answers and your consent record) stays on the phone until you delete it as explained in section 8.</li>
+<li>At 16 and 17 you train in youth mode: no 1RM tests and no maximal loads.</li>
+<li>In Mexico, Colombia and the Dominican Republic, processing the data of anyone under 18 —especially health data— also requires the authorization of your mother, father or legal representative (in Colombia, after hearing your opinion). Other countries may require it too. If that applies to you, only use the app with that authorization. The app does not ask for it or check it.</li>
+<li>If you are a parent or guardian and believe a child under 16 is using the app: if they finished the initial questionnaire, you can delete their data in Profile › "Delete account"; if not, uninstall the app or clear its storage in Android settings (section 8). Remember the backup copy (section 7). You can also write to us.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="10-security">
+<h2 id="10-security">10. Security</h2>
+<ul>
+<li>Your data is in the app's private storage. Under normal conditions, Android and iOS prevent other apps from reading it.</li>
+<li>The app does not add its own encryption to that data. Protect your phone with a screen lock and keep its system up to date: anyone who can use your unlocked phone can open the app and see your data.</li>
+<li>The files you export contain your data, including health data if you gave it. Store and share them with care.</li>
+<li>The protection of backups depends on Google or Apple.</li>
+</ul>
+</section>
+<section class="part" aria-labelledby="11-how-to-exercise-your-rights">
+<h2 id="11-how-to-exercise-your-rights">11. How to exercise your rights</h2>
+<ul>
+<li><strong>In the app, instantly,</strong> once you have finished the initial questionnaire: export (Profile › "Export my data"), delete (Profile › "Delete account") or withdraw health consent (Profile › Settings › Privacy and consents). If you have not finished it, see section 8.</li>
+<li><strong>By email:</strong> write to <a href="mailto:angelo.rivas@mordobo.com">angelo.rivas@mordobo.com</a> with the subject "Privacy".</li>
+</ul>
+<p>This policy is also in the app: Profile › Settings › "Privacy policy".</p>
+<h3 id="procedure">Procedure</h3>
+<ol>
+<li><strong>What to include:</strong> your name, the address where you want our reply, which right you are exercising, a clear description of what you are asking for and which country you are writing from. If you are acting on behalf of someone else, attach the document that proves you represent them.</li>
+<li><strong>How we check your identity:</strong> since we do not have the app's data, the only data we keep about you is your emails; for that data, writing from the same address is enough. We will not ask for more information than we need to help you, and we will never ask for your health data.</li>
+<li><strong>If something is missing,</strong> we will ask you for it within 5 days of receiving your request. In Colombia, if you do not complete it within 2 months of our notice, your claim is considered withdrawn.</li>
+<li><strong>We reply by email</strong> within the deadlines in section 8. Exercising your rights is free.</li>
+</ol>
+</section>
+<section class="part" aria-labelledby="12-changes-to-this-policy">
+<h2 id="12-changes-to-this-policy">12. Changes to this policy</h2>
+<p>If we change this policy, we will update the version and date and keep the changelog. If a change affects how your data is handled, we will publish it on this page and in the Google Play release notes of the update that includes it before it applies, and the app will ask for your consent again when needed.</p>
+<section class="future" aria-labelledby="if-we-turn-on-accounts-and-sync-in-the-future">
+<h3 id="if-we-turn-on-accounts-and-sync-in-the-future">If we turn on accounts and sync in the future</h3>
+<p>This is <strong>not active yet</strong>. A future version may offer an optional account (with Google, with Apple or with an email code) so you do not lose your data and can use it on several devices. With an account, your data would also be stored on a server in the European Union (Supabase, in Frankfurt, Germany), which would process it on our behalf. Your health data would only be uploaded with a separate consent, which you could refuse or withdraw and keep training on your phone. That version would also check for app updates with our update provider (Expo), which would receive an installation identifier; and if you sign in with Google or Apple, they would handle that sign-in under their own policies. Without an account, your training data would stay only on your phone. Before turning any of this on, we will update this policy, naming every provider and where it processes data, and let you know.</p>
+</section>
+</section>
+<section class="part" aria-labelledby="13-medical-disclaimer">
+<h2 id="13-medical-disclaimer">13. Medical disclaimer</h2>
+<p>TracePhysique is not a medical device and its content is not medical advice: it does not diagnose, treat, cure or prevent any condition. If you have a health condition, an injury or any concerns, talk to a health professional before you start.</p>
+</section>
+</div></main>
+<footer><div class="wrap">
+<span>TracePhysique</span>
+<a href="mailto:angelo.rivas@mordobo.com">angelo.rivas@mordobo.com</a>
+<a href="../../">Home</a>
+<a href="../../es/privacidad/" hreflang="es" lang="es">Español</a>
+</div></footer>
+</body>
+</html>
